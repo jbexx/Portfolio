@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#page-1 {
+  background-color: #292C34;
+  height: 100vh;
+}
+
+.head-img {
+  width: 100vw;
+}
+
+#page-2 {
+  background-color: #292C34;  
+  /* height: 100vh; */
+}
+
+.top-three-logos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -50px;
+}
+
+.logos-row-2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -45px;
+}
+
+.node {
+  margin-left: 210px;
+}
+
+.postgresql {
+  margin-right: 210px;
+}
+
+.logos-row-3 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -45px;  
+}
