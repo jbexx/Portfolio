@@ -134,3 +134,47 @@ p {
   position: relative;
   top: 80px;
 }
+
+#page-5 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #292C34;
+}
+
+.jargo-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.jargo-content {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.app-demo {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.app-gif,
+.code-snippet {
+  margin: 30px;
+  transition: all .3s ease-in-out;
+  width: 400px;
+}
+
+.app-gif:hover,
+.code-snippet:hover {
+  transform: scale(2);
+  margin-left: 100px;
+}
+
+.jargo-text {
+  margin-left: 10%;
+}
