@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <section id="page-1">
+  <article id="page-1">
     <img class='head-img' src="./assets/46747_423950841035_7221585_n_edited.jpg" alt="Jonathan standing in front of Crane Bar eating a sandwich">
-  </section>
+  </article>
 
   <article id="page-2">
     <section class="top-three-logos">
@@ -30,6 +30,33 @@
       <img src="./assets/html5-hexagon.svg" alt="html5 logo">
       <img src="./assets/css3-hexagon.svg" alt="css3 logo">
       <img src="./assets/git-hexagon.svg" alt="git logo">
+    </section>
+  </article>
+
+  <article id="page-3">
+    <section class="phone-display">
+      <img class="iphone" src="./assets/iphone8-white.svg" alt="iphone8">
+      <video class="docswap-vid" width="235px" src="./assets/DocSwap-demo.mov" autoplay="true" loop="true">
+      </video>
+    </section>
+    <section class="description">
+      <p>
+        The Idea for this app came from my interaction with newly arriving refugee families to the U.S. One of the struggles they
+        face is reading documentation they recieve through mail.
+      </p>
+      <p>
+        This is a Mobile App built in React-Native that implements the Camera functionality to allow the user to take a picture of
+        a document. It is then posted to the Google Cloud Vision API where it is parsed and returned as text.
+      </p>
+      <p>
+        The user can then select a language they wish to translate the document into. Another post is made to the Google Cloud Translation
+        API where it is translated and returned.
+      </p>
+      <p>
+        I have also incorporated text messaging functionality. Because the share functionality allows the user to send a text message
+        with the translated text, I wanted to build out a way to write a text message, translate it, and then be able to
+        send that text all within one application.
+      </p>
     </section>
   </article>
 
