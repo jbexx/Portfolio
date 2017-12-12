@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -15,7 +17,6 @@
 
 #page-2 {
   background-color: #292C34;  
-  /* height: 100vh; */
 }
 
 .top-three-logos {
@@ -59,7 +60,7 @@
   position: absolute;
 }
 
-.docswap-vid {
+.demo-vid {
   left: 14px;
   position: relative;
   top: 80px;
