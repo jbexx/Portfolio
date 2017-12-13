@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="225px" height="270px" viewBox="0 0 653 754" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="125px" height="170px" viewBox="0 0 653 754" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
     <title>css3-hexagon 2</title>
     <desc>Created with Sketch.</desc>
@@ -23,7 +23,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="css3-hexagon" transform="translate(4.000000, 9.000000)">
-            <polygon id="Polygon" stroke="#2062AF" stroke-width="15" points="318.424565 0 636.84913 183.842508 636.84913 551.527525 318.424565 735.370032 2.04152339e-13 551.527525 0 183.842508"></polygon>
+            <polygon id="Polygon" stroke="#f2f2f2" stroke-width="15" points="318.424565 0 636.84913 183.842508 636.84913 551.527525 318.424565 735.370032 2.04152339e-13 551.527525 0 183.842508"></polygon>
             <polygon id="Shape" points="50 98 588.584 98 588.584 636.583 50 636.583"></polygon>
             <polygon id="Shape" fill="#2062AF" fill-rule="nonzero" points="455.5 565.454 319.29 602.13 183.078 565.454 151.646 224.929 486.936 224.929"></polygon>
             <polygon id="Shape" fill="#3C9CD7" fill-rule="nonzero" points="319.289 252.511 319.289 572.878 319.597 572.962 429.826 543.28 455.269 252.511"></polygon>
