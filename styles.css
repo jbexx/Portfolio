@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   font-weight: 300;
@@ -9,7 +8,7 @@
 
 #page-1 {
   background-color: #292C34;
-  background-image: url('./assets/small-rooftops-alt.png');
+  background-image: url('./assets/rooftops-bw.png');
   background-position-y: -100px;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -22,29 +21,26 @@
 
 .header-img {
   position: absolute;
-  margin-top: -100px;
   width: 100vw;
 }
 
 .header-title {
-  color: #292C34;
-  font-family: 'Lato', sans-serif;
+  color: #d1b042;
   font-size: 6rem;
   font-weight: 100;
 }
 
+.header-title > span {
+  font-weight: 300;
+}
+
 .career-title {
-  background-color: rgba(41, 44, 52, 0.589);
+  background-color: rgba(41, 44, 52, 0.389);
   color: #d1b042;
-  font-family: 'Lato', sans-serif;
   font-size: 5.5rem;
   font-weight: 100;
   margin-top: 30px;
   padding-bottom: 20px;
-}
-
-.header-title > span {
-  font-weight: 300;
 }
 
 .head-img {
@@ -59,7 +55,7 @@
 }
 
 .link-target:hover > .link-icon {
-  fill: #2b2b2b;
+  fill: #D6D3CB;
 }
 
 #page-2 {
@@ -72,25 +68,6 @@
   margin-top: -40px;
 }
 
-/* .logos-row-2 {
-  display: flex;
-  justify-content: space-around;
-  margin-top: -45px;
-}
-
-.node {
-  margin-left: 210px;
-}
-
-.postgresql {
-  margin-right: 210px;
-}
-
-.logos-row-3 {
-  display: flex;
-  justify-content: space-around;
-  margin-top: -45px;  
-} */
 
 #page-3 {
   display: flex;
@@ -100,11 +77,16 @@
   background-color: #292C34;
 }
 
+.section-title {
+  color: #d1b042;
+  font-size: 5.5rem;
+  font-weight: 100;
+  margin: 80px;
+}
+
 .project-title {
-  color: white;
+  color: #f2f2f2;
   font-size: 3rem;
-  font-weight: 400;
-  margin-top: 80px;
 }
 
 .main-content {
@@ -124,25 +106,26 @@
 }
 
 .description {
+  align-items: center;
   color: #f2f2f2;
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.3rem;
   width: 45%;
 }
 
-.docswap-text {
+.description > p {
+  font-size: 1.35rem;  
+  font-weight: 100;
+  margin: 15px;
+}
+
+.docswap-text {  
   margin-left: 10%;
 }
 
 .tokentracker-text {
   margin-right: 10%;
-}
-
-p {
-  margin: 15px;
 }
 
 .nav-link {
@@ -183,20 +166,54 @@ p {
 }
 
 #page-5 {
-  display: flex;
   align-items: center;
+  background-color: #292C34;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.nav-link:hover > .heroku-icon {
+  fill:#ff23f4;
+}
+
+.pp-demo {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.pp-gif,
+.code-snippet {
+  margin: 30px;
+  transition: all .3s ease-in-out;
+  width: 400px;
+}
+
+.game-gif:hover,
+.pp-gif:hover,
+.code-snippet:hover {
+  transform: scale(2);
+  margin-left: 100px;
+}
+
+.app-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%
+}
+
+#page-6 {
+  align-items: center;
   background-color: #292C34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.jargo-title {
-  color: white;
-  font-size: 3rem;
-  font-weight: 400;
-}
-
-.jargo-content {
+.jargo-content,
+.pp-content {
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -209,19 +226,65 @@ p {
   width: 30%;
 }
 
-.app-gif,
-.code-snippet {
+.game-gif,
+.jargo-gif,
+.jargo-snippet {
   margin: 30px;
   transition: all .3s ease-in-out;
   width: 400px;
 }
 
-.app-gif:hover,
-.code-snippet:hover {
+.jargo-gif:hover,
+.jargo-snippet:hover {
   transform: scale(2);
-  margin-left: 100px;
+  margin-left: -50px;
 }
 
-.jargo-text {
+.pp-text {
+  margin-left: 10%;
+}
+
+#page-7 {
+  align-items: center;
+  background-color: #292C34;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.jargo-text,
+.swapi-text {
+  height: 90%;
+}
+
+.swapi-gif,
+.swapi-snippet {
+  margin: 30px;
+  transition: all .3s ease-in-out;
+  width: 400px;
+}
+
+.swapi-gif:hover,
+.swapi-snippet:hover {
+  transform: scale(2);
+  margin-left: -50px;
+}
+
+#page-8 {
+  align-items: center;
+  background-color: #292C34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-content {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.game-text {
   margin-left: 10%;
 }
