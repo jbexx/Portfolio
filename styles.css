@@ -93,9 +93,10 @@
 }
 
 .main-content {
+  align-items: center;
   display: flex;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .iphone {
@@ -151,7 +152,7 @@
 }
 
 .phone-display {
-  margin-top: 30px;
+  margin-bottom: 150px;
 }
 
 /* page-4 Token Tracker */
@@ -190,7 +191,7 @@
 
 .grow-right:hover {
   transform: scale(2);
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .app-links {
@@ -210,7 +211,7 @@
 
 .grow-left:hover {
   transform: scale(2);
-  margin-left: -50px;
+  margin-left: -130px;
 }
 
 .right-text {
