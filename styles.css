@@ -251,3 +251,7 @@
 .email-link:hover {
   background-color: #d1b042;
 }
+
+.email {
+  font-weight: 400;
+}
