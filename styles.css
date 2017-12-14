@@ -226,10 +226,11 @@
 
 #contact-page {
   align-items: center;
-  background-color: #292C34;
+  background-image: url("./assets/contact-img.png");
+  background-size: cover;
   display: flex;
   justify-content: center;
-  height: 30vh;
+  height: 100vh;
 }
 
 .email-link {
