@@ -137,13 +137,16 @@
   font-size: 1.5rem;
   margin-top: 40px;
   text-decoration: none;
+  transition: .3s;    
 }
 
 .github-icon {
   fill: #f2f2f2;
+  transition: .3s;  
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:hover > .github-icon {
   color: #ff23f4;
 }
 
@@ -155,13 +158,12 @@
   margin-bottom: 150px;
 }
 
-/* page-4 Token Tracker */
-
 #page-4,
 #page-5,
 #page-6,
 #page-7,
-#page-8 {
+#page-8,
+#page-9 {
   align-items: center;
   background-color: #292C34;
   display: flex;
@@ -176,7 +178,9 @@
   top: 80px;
 }
 
-/* page-5 palette picker */
+.heroku-icon {
+  transition: .3s;  
+}
 
 .nav-link:hover > .heroku-icon {
   fill:#ff23f4;
@@ -200,8 +204,6 @@
   width: 100%
 }
 
-/* page-6 jargo */
-
 .app-demo {
   display:flex;
   flex-direction: column;
@@ -220,4 +222,31 @@
 
 .left-text {
   height: 90%;
+}
+
+#contact-page {
+  align-items: center;
+  background-color: #292C34;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+}
+
+.email-link {
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  color: #292C34;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.2rem;
+  height: 60px;
+  justify-content: center;
+  text-decoration: none;
+  transition: .3s;  
+  width: 300px;
+}
+
+.email-link:hover {
+  background-color: #d1b042;
 }
