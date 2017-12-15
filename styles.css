@@ -12,7 +12,7 @@
   background-image: url('./assets/rooftops-bw.png');
   background-position-y: -100px;
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100vw 100vh;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -64,14 +64,20 @@
 
 .top-logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: -40px;
+}
+
+.top-logos > img {
+  margin: 0 10px;
 }
 
 #page-3 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 140vh;
   justify-content: center;
   background-color: #292C34;
 }
@@ -131,7 +137,7 @@
 .nav-link {
   color: #f2f2f2;
   font-size: 1.5rem;
-  margin-top: 40px;
+  margin: 40px 0 20px 20px;
   text-decoration: none;
   transition: .3s;    
 }
@@ -196,6 +202,7 @@
 
 .app-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%
 }
@@ -204,7 +211,6 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
 }
 
 .grow-left:hover {
@@ -250,4 +256,44 @@
 
 .email {
   font-weight: 400;
+}
+
+@media (max-width: 930px) {
+  .header-title,
+  .career-title {
+    font-size: 5em;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .description {
+    min-height: 400px;
+    width: 80%;
+  }
+
+  .app-demo {
+    min-height: 200px;
+  }
+
+  .right-text,
+  .left-text {
+    margin: 20px;
+  }
+
+  .grow-left:hover,
+  .grow-right:hover {
+    transform: scale(1);
+    margin-left: 0px;
+  }
+
+  #page-4,
+  #page-5,
+  #page-6,
+  #page-7,
+  #page-8,
+  #page-9 {
+    height: 150vh;
+  }
 }
