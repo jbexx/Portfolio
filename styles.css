@@ -1,51 +1,45 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 300;
   margin: 0;
 }
 
-#page-1 {
-  align-items: center;
-  background-color: #292C34;
-  background-image: url('./assets/rooftops-bw.png');
-  background-position-y: -100px;
-  background-repeat: no-repeat;
+#top {
+  background: url('./assets/palms-and-grass.png') no-repeat top center fixed;
   background-size: 100vw 100vh;
+  /* align-items: center;
+  display: flex;
+  flex-direction: column; */
+  height: 105vh;
+  position: relative;
+  /* justify-content: center; */
+}
+
+.top-content {
+  align-items: center;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: center;
 }
 
-#page-2 {
-  background-color: #292C34;  
+.fade-in {
+  opacity: 1;
 }
 
-.header-img {
-  position: absolute;
-  width: 100vw;
+.fade-out {
+  margin-top: 35px;
+  opacity: 0;
 }
 
 .header-title {
-  color: #d1b042;
-  font-size: 6rem;
-  font-weight: 100;
-}
-
-.career-title {
-  background-color: rgba(41, 44, 52, 0.389);
-  color: #d1b042;
-  font-size: 5.5rem;
-  font-weight: 100;
-  margin-top: 30px;
-  padding-bottom: 20px;
-}
-
-.head-img {
-  width: 100vw;
-  margin-top: -100px;
+  color: #EAE7DC;
+  text-shadow: 0 0 25px #182524;
+  font-size: 4rem;
+  font-weight: 600;
+  transition: all 700ms ease-in-out;
 }
 
 .nav-links {
@@ -58,16 +52,132 @@
   fill: #D6D3CB;
 }
 
-#page-2 {
-  background-color: #292C34;
+/* #page-1::after {
+  content: '';
+  background: url('./assets/jb-river.png') no-repeat top center fixed;
+  background-size: 100vw 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+} */
+
+/* .scroll-words span {
+  animation: fadeWords 9s linear 0s;
+  color: #E98074;
+  font-size: 2rem;
+  font-weight: 400;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
 }
 
-.top-logos {
+.scroll-words span:nth-child(2) {
+  animation-delay: 3s;
+}
+.scroll-words span:nth-child(3) {
+  animation-delay: 6s;
+}
+.scroll-words span:nth-child(4) {
+  animation-delay: 9s;
+}
+
+@keyframes fadeWords {
+  0% { opacity: 0; }
+  8% { opacity: 0.5; }
+  19% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+} */
+
+/* .name-title span {
+  animation: fadeWords 0s ease-in-out 12s;
+  color: rgb(138, 138, 142);
+  font-size: 2rem;
+  font-weight: 400;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+} */
+
+#floating-menu {
+  background-color: rgba(255, 255, 255, 0);
+  bottom: 0;
+  position: absolute;
+  transition: all 400ms;
+  width: 100vw;
+}
+
+#sticky-menu {
+  background-color: #8e8d8ade;
+  position: sticky;
+  top: 0;
+  transition: all 400ms;
+  width: 100vw;
+  z-index: 100;
+}
+
+.hide {
+  /* display: none; */
+  opacity: 0;
+}
+
+.show {
+  /* display: unset; */
+  opacity: 1
+}
+
+#floating-menu div {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 25%;
+}
+
+#sticky-menu div {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 25%;
+}
+
+.menu-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #E85A4F;
+}
+
+.sticky-link {
+  color: #EAE7DC;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#about {
+  background: none;
+}
+
+
+
+/* .career-title {
+  background-color: rgba(41, 44, 52, 0.389);
+  color: #d1b042;
+  font-size: 5.5rem;
+  font-weight: 100;
+  margin-top: 30px;
+  padding-bottom: 20px;
+} */
+
+
+
+/* .top-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: -40px;
-}
+} */
 
 .top-logos > img {
   margin: 0 10px;
@@ -79,11 +189,11 @@
   flex-direction: column;
   height: 140vh;
   justify-content: center;
-  background-color: #292C34;
+  background-color: #eae7dc;
 }
 
 .section-title {
-  color: #d1b042;
+  color: #E85A4F;
   font-size: 5.5rem;
   font-weight: 100;
   margin: 80px;
@@ -167,7 +277,7 @@
 #page-8,
 #page-9 {
   align-items: center;
-  background-color: #292C34;
+  background-color: #eae7dc;
   display: flex;
   flex-direction: column;
   height: 100vh;
