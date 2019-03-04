@@ -3,7 +3,8 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111243878-1"></script>
+  <script async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-111243878-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -12,50 +13,123 @@
     gtag('config', 'UA-111243878-1');
   </script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image/png" href="./assets/heart.png" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <link rel="shortcut icon"
+        type="image/png"
+        href="./assets/heart.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,600"
+        rel="stylesheet">
+  <link rel="stylesheet"
+        href="styles.css">
   <title>Jonathan Beckman | Developer</title>
 </head>
 
 <body>
-  <article id="page-1">
-    <h2 class="header-title">
-      <span>J</span>onathan
-      <span>B</span>eckman</h2>
-    <h2 class="career-title">Developer</h2>
+  <section id="sticky-menu"
+           class="hide">
+    <div>
+      <a href="#about"
+         class="sticky-link">ABOUT</a>
+      <a href="#projects"
+         class="sticky-link">PROJECTS</a>
+      <a href="#contact"
+         class="sticky-link">CONTACT</a>
+    </div>
+  </section>
 
-    <section class="nav-links">
-      <a class="link-target" href="https://www.linkedin.com/in/jonathan-beckman/" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="7.025 7.025 497.951 497.95" class="link-icon" fill="#d1b042">
-          <path d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z"
-            fill-rule="nonzero" />
-        </svg>
-      </a>
+  <article id="top">
 
-      <a class="link-target" href="http://www.github.com/jbexx" target="_blank">
-        <svg version="1.1" width="80" height="80" viewBox="0 0 16 16" class="link-icon" aria-hidden="true" fill="#d1b042">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-            fill-rule="nonzero"></path>
-        </svg>
-      </a>
+    <section class="top-content">
+      <!-- <div class="scroll-words">
+        <span>DREAMER</span>
+        <span>EXPLORER</span>
+        <span>INNOVATOR</span>
+      </div> -->
+      <!-- <div class="name-title">
+        <span>Jonathan Beckman</span>
+      </div> -->
+      <span id="scroll-fade"
+            class="header-title">FRONT END DEVELOPER</span>
+      <!-- <h2 class="header-title">
+        <span>J</span>onathan
+        <span>B</span>eckman</h2> -->
+      <!-- <h2 class="career-title">Developer</h2> -->
+
+      <!-- <section class="nav-links">
+          <a class="link-target"
+            href="https://www.linkedin.com/in/jonathan-beckman/"
+            target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="7.025 7.025 497.951 497.95"
+                class="link-icon"
+                fill="#d1b042">
+              <path d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z"
+                    fill-rule="nonzero" />
+            </svg>
+          </a>
+
+          <a class="link-target"
+            href="http://www.github.com/jbexx"
+            target="_blank">
+            <svg version="1.1"
+                width="80"
+                height="80"
+                viewBox="0 0 16 16"
+                class="link-icon"
+                aria-hidden="true"
+                fill="#d1b042">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    fill-rule="nonzero"></path>
+            </svg>
+          </a>
+        </section> -->
+
+    </section>
+
+    <section id="floating-menu"
+             class="show">
+      <div>
+        <a href="#about"
+           class="menu-link">ABOUT</a>
+        <a href="#projects"
+           class="menu-link">PROJECTS</a>
+        <a href="#contact"
+           class="menu-link">CONTACT</a>
+      </div>
     </section>
   </article>
 
-  <article id="page-2">
-    <section class="top-logos">
-      <img src="./assets/javascript-hexagon.svg" alt="javascript-logo">
-      <img src="./assets/react-hexagon.svg" alt="react logo">
-      <img src="./assets/redux-hexagon.svg" alt="redux logo">
-      <img src="./assets/node-hexagon.svg" alt="node.js logo">
-      <img src="./assets/postgresql-hexagon.svg" alt="postgresql logo">
-      <img src="./assets/html5-hexagon.svg" alt="html5 logo">
-      <img src="./assets/css3-hexagon.svg" alt="css3 logo">
-      <img src="./assets/git-hexagon.svg" alt="git logo">
-    </section>
+  <article id="about">
+
+
+    <!--
+         <section
+         class="top-logos">
+        <img src="./assets/javascript-hexagon.svg"
+             alt="javascript-logo">
+        <img src="./assets/react-hexagon.svg"
+             alt="react logo">
+        <img src="./assets/redux-hexagon.svg"
+             alt="redux logo">
+        <img src="./assets/node-hexagon.svg"
+             alt="node.js logo">
+        <img src="./assets/postgresql-hexagon.svg"
+             alt="postgresql logo">
+        <img src="./assets/html5-hexagon.svg"
+             alt="html5 logo">
+        <img src="./assets/css3-hexagon.svg"
+             alt="css3 logo">
+        <img src="./assets/git-hexagon.svg"
+             alt="git logo">
+    </section> -->
 
   </article>
 
@@ -67,29 +141,47 @@
 
     <section class="main-content">
       <div class="phone-display">
-        <img class="iphone" src="./assets/iphone8-white.svg" alt="iphone8">
-        <video class="demo-vid" width="235px" src="./assets/DocSwap-demo.mp4" autoplay="true" loop="true">
+        <img class="iphone"
+             src="./assets/iphone8-white.svg"
+             alt="iphone8">
+        <video class="demo-vid"
+               width="235px"
+               src="./assets/DocSwap-demo.mp4"
+               autoplay="true"
+               loop="true">
         </video>
       </div>
 
       <div class="description docswap-text">
         <p>
-          The Idea for DocSwap came from my interaction with newly arriving refugee families to the U.S. One of the struggles they
+          The Idea for DocSwap came from my interaction with newly arriving refugee families to the U.S. One of the
+          struggles they
           face is reading documentation they recieve through mail.
         </p>
         <p>
-          DocSwap is a Mobile App built in React-Native that implements the Camera functionality to allow the user to take a picture
+          DocSwap is a Mobile App built in React-Native that implements the Camera functionality to allow the user to
+          take a picture
           of a document. It is then posted to the Google Cloud Vision API where it is parsed and returned as text.
         </p>
         <p>
-          The user can then select a language they wish to translate the document into. Another post is made to the Google Cloud Translation
+          The user can then select a language they wish to translate the document into. Another post is made to the
+          Google Cloud Translation
           API where it is translated and returned.
         </p>
 
-        <a class="nav-link" href="https://github.com/jbexx/DocSwap" target="_blank">
+        <a class="nav-link"
+           href="https://github.com/jbexx/DocSwap"
+           target="_blank">
           <span> View on GitHub </span>
-          <svg version="1.1" width="20" height="20" viewBox="0 0 16 16" class="github-icon" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          <svg version="1.1"
+               width="20"
+               height="20"
+               viewBox="0 0 16 16"
+               class="github-icon"
+               aria-hidden="true">
+            <path fill-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+            </path>
           </svg>
         </a>
       </div>
@@ -103,25 +195,42 @@
     <section class="main-content">
       <div class="description tokentracker-text">
         <p>
-          Token Tracker is a React-Native app that displays current Crypto Currency prices relative the US Dollar for the top 100 coins
+          Token Tracker is a React-Native app that displays current Crypto Currency prices relative the US Dollar for
+          the top 100 coins
           based on market cap. I built this app to practice using Redux and a Web Socket with React-Native.
         </p>
         <p>
-          Token Tracker is still a work in progress and as I continue to work on it, I will make each coin clickable to show more detailed
+          Token Tracker is still a work in progress and as I continue to work on it, I will make each coin clickable to
+          show more detailed
           information about that specific coin.
         </p>
 
-        <a class="nav-link" href="https://github.com/jbexx/TokenTracker" target="_blank">
+        <a class="nav-link"
+           href="https://github.com/jbexx/TokenTracker"
+           target="_blank">
           <span> View on GitHub </span>
-          <svg version="1.1" width="20" height="20" viewBox="0 0 16 16" class="github-icon" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          <svg version="1.1"
+               width="20"
+               height="20"
+               viewBox="0 0 16 16"
+               class="github-icon"
+               aria-hidden="true">
+            <path fill-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+            </path>
           </svg>
         </a>
       </div>
 
       <div class="phone-display">
-        <img class="iphone" src="./assets/iphone8-white.svg" alt="iphone8">
-        <video class="demo-vid" width="235px" src="./assets/TokenTracker-demo.mp4" autoplay="true" loop="true">
+        <img class="iphone"
+             src="./assets/iphone8-white.svg"
+             alt="iphone8">
+        <video class="demo-vid"
+               width="235px"
+               src="./assets/TokenTracker-demo.mp4"
+               autoplay="true"
+               loop="true">
         </video>
       </div>
     </section>
@@ -133,36 +242,59 @@
 
     <section class="main-content">
       <div class="app-demo">
-        <img class="gif grow-right" src="https://media.giphy.com/media/xUNd9B8B9WocYrkd0Y/giphy.gif" alt="gif of app">
-        <img class="code-snippet grow-right" src="./assets/pp-code-snippet.png" alt="screen shot of code snippet">
+        <img class="gif grow-right"
+             src="https://media.giphy.com/media/xUNd9B8B9WocYrkd0Y/giphy.gif"
+             alt="gif of app">
+        <img class="code-snippet grow-right"
+             src="./assets/pp-code-snippet.png"
+             alt="screen shot of code snippet">
       </div>
 
       <div class="description right-text">
         <p>
-          Palette Picker is a project built with a Node, Express and Knex backend with PostgreSQL database, and a simple front-end
-          written with jQuery. Circle CI was used for continuous integration from the master branch on github to deployment
+          Palette Picker is a project built with a Node, Express and Knex backend with PostgreSQL database, and a simple
+          front-end
+          written with jQuery. Circle CI was used for continuous integration from the master branch on github to
+          deployment
           on heroku.
         </p>
         <p>
-          Palette Picker is an app that generates 5 random colors that can be locked, manually changed and then saved to a project
+          Palette Picker is an app that generates 5 random colors that can be locked, manually changed and then saved to
+          a project
           that is posted to the backend for storing a users color palettes.
         </p>
 
         <div class="app-links">
-          <a class="nav-link" href="https://github.com/jbexx/Palette-Picker" target="_blank">
+          <a class="nav-link"
+             href="https://github.com/jbexx/Palette-Picker"
+             target="_blank">
             <span> View on GitHub </span>
-            <svg version="1.1" width="20" height="20" viewBox="0 0 16 16" class="github-icon" aria-hidden="true">
-              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+            <svg version="1.1"
+                 width="20"
+                 height="20"
+                 viewBox="0 0 16 16"
+                 class="github-icon"
+                 aria-hidden="true">
+              <path fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+              </path>
             </svg>
           </a>
-          <a class="nav-link" href="https://jb-palette-picker.herokuapp.com/" target="_blank">
+          <a class="nav-link"
+             href="https://jb-palette-picker.herokuapp.com/"
+             target="_blank">
             <span> View on Heroku </span>
-            <svg width="15" height="24" viewBox="0 0 256 400" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"
-              class="heroku-icon">
-              <path d="M28.083 398.289V363.51c0-2.452-1.798-3.51-3.917-3.51-4.248 0-9.554 1.058-14.37 3.181v35.108H0v-64.576h9.795v21.304c4.656-1.712 10.206-3.18 15.758-3.18 8.898 0 12.246 5.469 12.246 12.976v33.476h-9.716zm27.999-21.063c.326 11.674 2.613 13.961 9.794 13.961 5.634 0 12.002-1.879 16.902-3.757l1.632 7.346c-5.226 2.37-11.593 4.655-19.183 4.655-16.33 0-18.862-8.978-18.862-23.268 0-7.835.573-14.939 2.45-21.47 4.898-1.878 11.43-2.857 19.673-2.857 13.393 0 17.473 7.43 17.473 20.41v4.98H56.082zM68.488 360c-2.935 0-7.59.082-11.427.813-.406 1.96-.899 4.655-1.062 9.636h20.41c0-6.778-1.225-10.449-7.921-10.449zm35.837 3.181v35.108h-9.797v-39.515c8.246-4.489 16.981-5.877 22.698-6.285v8.164c-4 .326-9.064.816-12.9 2.528zm38.778 36.25c-14.616 0-21.228-7.183-21.228-23.594 0-17.389 8.735-24 21.228-24 14.612 0 21.226 7.182 21.226 23.592 0 17.39-8.737 24.002-21.226 24.002zm0-39.43c-7.512 0-11.675 4.325-11.675 15.836 0 12.574 3.51 15.35 11.675 15.35 7.51 0 11.674-4.247 11.674-15.758 0-12.574-3.51-15.429-11.674-15.429zm68.49 38.288H200.08c-2.692-7.184-6.45-14.532-12.246-20.9h-5.144v20.9h-9.796v-64.576h9.796v37.062h4.573c4.98-5.144 8.816-11.509 11.511-17.797h11.02c-3.754 7.593-8.57 14.287-13.959 19.757 6.45 8.164 11.511 16.818 15.757 25.554zm18.363 1.142c-8.897 0-12.244-5.468-12.244-12.98v-33.473h9.714v34.697c0 2.452 1.794 3.512 3.917 3.512 4.246 0 10.042-1.06 14.86-3.184v-35.025H256v39.35c-11.593 6.369-20.493 7.103-26.044 7.103zM225.628 317.253H30.258C13.545 317.253 0 303.708 0 286.998V30.256C0 13.546 13.546 0 30.257 0h195.37c16.71 0 30.26 13.546 30.26 30.256v256.742c0 16.71-13.55 30.255-30.26 30.255z"
-              />
+            <svg width="15"
+                 height="24"
+                 viewBox="0 0 256 400"
+                 fill="#f2f2f2"
+                 xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMinYMin meet"
+                 class="heroku-icon">
+              <path
+                    d="M28.083 398.289V363.51c0-2.452-1.798-3.51-3.917-3.51-4.248 0-9.554 1.058-14.37 3.181v35.108H0v-64.576h9.795v21.304c4.656-1.712 10.206-3.18 15.758-3.18 8.898 0 12.246 5.469 12.246 12.976v33.476h-9.716zm27.999-21.063c.326 11.674 2.613 13.961 9.794 13.961 5.634 0 12.002-1.879 16.902-3.757l1.632 7.346c-5.226 2.37-11.593 4.655-19.183 4.655-16.33 0-18.862-8.978-18.862-23.268 0-7.835.573-14.939 2.45-21.47 4.898-1.878 11.43-2.857 19.673-2.857 13.393 0 17.473 7.43 17.473 20.41v4.98H56.082zM68.488 360c-2.935 0-7.59.082-11.427.813-.406 1.96-.899 4.655-1.062 9.636h20.41c0-6.778-1.225-10.449-7.921-10.449zm35.837 3.181v35.108h-9.797v-39.515c8.246-4.489 16.981-5.877 22.698-6.285v8.164c-4 .326-9.064.816-12.9 2.528zm38.778 36.25c-14.616 0-21.228-7.183-21.228-23.594 0-17.389 8.735-24 21.228-24 14.612 0 21.226 7.182 21.226 23.592 0 17.39-8.737 24.002-21.226 24.002zm0-39.43c-7.512 0-11.675 4.325-11.675 15.836 0 12.574 3.51 15.35 11.675 15.35 7.51 0 11.674-4.247 11.674-15.758 0-12.574-3.51-15.429-11.674-15.429zm68.49 38.288H200.08c-2.692-7.184-6.45-14.532-12.246-20.9h-5.144v20.9h-9.796v-64.576h9.796v37.062h4.573c4.98-5.144 8.816-11.509 11.511-17.797h11.02c-3.754 7.593-8.57 14.287-13.959 19.757 6.45 8.164 11.511 16.818 15.757 25.554zm18.363 1.142c-8.897 0-12.244-5.468-12.244-12.98v-33.473h9.714v34.697c0 2.452 1.794 3.512 3.917 3.512 4.246 0 10.042-1.06 14.86-3.184v-35.025H256v39.35c-11.593 6.369-20.493 7.103-26.044 7.103zM225.628 317.253H30.258C13.545 317.253 0 303.708 0 286.998V30.256C0 13.546 13.546 0 30.257 0h195.37c16.71 0 30.26 13.546 30.26 30.256v256.742c0 16.71-13.55 30.255-30.26 30.255z" />
               <path d="M160.36 273.6V147.61s8.195-30.15-100.943 12.334c-.2.539-.2-116.504-.2-116.504l35.66-.22v74.991s99.846-39.325 99.846 29.824V273.6h-34.362zm20.32-184.994h-37.824c13.615-16.646 25.94-45.167 25.94-45.167h39.11s-6.696 18.587-27.225 45.167zM59.865 273.382v-71.748l35.878 35.877-35.878 35.871z"
-                fill="#292c34" />
+                    fill="#292c34" />
             </svg>
           </a>
         </div>
@@ -178,25 +310,40 @@
 
       <div class="description left-text">
         <p>
-          Jargo is a project that focused on creating a RESTfull API using Node, Express, Knex and PostgreSQL by scraping data from
+          Jargo is a project that focused on creating a RESTfull API using Node, Express, Knex and PostgreSQL by
+          scraping data from
           the web and migrating it to the database.
         </p>
         <p>
-          This project has a simple front-end that serves to provide the user with a JSON Web-Token to use for authentication purposes
+          This project has a simple front-end that serves to provide the user with a JSON Web-Token to use for
+          authentication purposes
           when querying endpoints on the back-end. The data focuses on seafaring vessels and the ports they call to.
         </p>
 
-        <a class="nav-link" href="https://github.com/jbexx/byob" target="_blank">
+        <a class="nav-link"
+           href="https://github.com/jbexx/byob"
+           target="_blank">
           <span> View on GitHub </span>
-          <svg version="1.1" width="20" height="20" viewBox="0 0 16 16" class="github-icon" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          <svg version="1.1"
+               width="20"
+               height="20"
+               viewBox="0 0 16 16"
+               class="github-icon"
+               aria-hidden="true">
+            <path fill-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+            </path>
           </svg>
         </a>
       </div>
 
       <div class="app-demo">
-        <img class="gif grow-left" src="https://media.giphy.com/media/xUNda6MLnSs8RGsRkQ/giphy.gif" alt="gif of jargo homepage">
-        <img class="code-snippet grow-left" src="./assets/byob-code-snippet-migration.png" alt="screen shot of code snippet">
+        <img class="gif grow-left"
+             src="https://media.giphy.com/media/xUNda6MLnSs8RGsRkQ/giphy.gif"
+             alt="gif of jargo homepage">
+        <img class="code-snippet grow-left"
+             src="./assets/byob-code-snippet-migration.png"
+             alt="screen shot of code snippet">
       </div>
 
     </section>
@@ -208,25 +355,41 @@
 
     <section class="main-content">
       <div class="app-demo">
-        <img class="gif grow-right" src="https://media.giphy.com/media/xUNda5Cq4hDkYJ3bgY/giphy.gif" alt="gif of game">
-        <img class="code-snippet grow-right" src="./assets/movie-tracker-code-snippet.png" alt="screen shot of code snippet">
+        <img class="gif grow-right"
+             src="https://media.giphy.com/media/xUNda5Cq4hDkYJ3bgY/giphy.gif"
+             alt="gif of game">
+        <img class="code-snippet grow-right"
+             src="./assets/movie-tracker-code-snippet.png"
+             alt="screen shot of code snippet">
       </div>
 
       <div class="description right-text">
         <p>
-          Movie Tracker is a project that consumes The Movie DB API to display recent movie releases. Movie Tracker will show the user
-          a synopsis of each movie and allow them to create an account with an email and password so they can save movies
+          Movie Tracker is a project that consumes The Movie DB API to display recent movie releases. Movie Tracker will
+          show the user
+          a synopsis of each movie and allow them to create an account with an email and password so they can save
+          movies
           they might want to see.
         </p>
         <p>
-          Movie tracker uses PostgreSQL database to store the users and their favorite movies. The front-end is built using React-Router-Redux
+          Movie tracker uses PostgreSQL database to store the users and their favorite movies. The front-end is built
+          using React-Router-Redux
           for state managment and routing to different pages on the site.
         </p>
 
-        <a class="nav-link" href="https://github.com/jbexx/Movie-Tracker" target="_blank">
+        <a class="nav-link"
+           href="https://github.com/jbexx/Movie-Tracker"
+           target="_blank">
           <span> View on GitHub </span>
-          <svg version="1.1" width="20" height="20" viewBox="0 0 16 16" class="github-icon" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          <svg version="1.1"
+               width="20"
+               height="20"
+               viewBox="0 0 16 16"
+               class="github-icon"
+               aria-hidden="true">
+            <path fill-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+            </path>
           </svg>
         </a>
       </div>
@@ -241,30 +404,47 @@
 
       <div class="description left-text">
         <p>
-          Game Time is an attempt at re-creating my favorite arcade game Galaga, the point we got to mostly resemebles Space Invaders
+          Game Time is an attempt at re-creating my favorite arcade game Galaga, the point we got to mostly resemebles
+          Space Invaders
           though, but it's still incredibly fun to play.
         </p>
         <p>
-          At the start of a game, the player will have three lives, or ships, to use to try and destroy as many aliens as possible.
-          Each stage the player reaches, the aliens shot more frequently, but if the player successfully hits an alien, their
+          At the start of a game, the player will have three lives, or ships, to use to try and destroy as many aliens
+          as possible.
+          Each stage the player reaches, the aliens shot more frequently, but if the player successfully hits an alien,
+          their
           own bullets will fire at a quicker rate.
         </p>
         <p>
-          Game Time was built using Vanilla JavaScript with the main focus being on Object Oriented Programming. Each piece of the
+          Game Time was built using Vanilla JavaScript with the main focus being on Object Oriented Programming. Each
+          piece of the
           game; the ship, the aliens, even the bullets are their own JavaScript object class.
         </p>
 
-        <a class="nav-link" href="https://github.com/jbexx/game-time" target="_blank">
+        <a class="nav-link"
+           href="https://github.com/jbexx/game-time"
+           target="_blank">
           <span> View on GitHub </span>
-          <svg version="1.1" width="20" height="20" viewBox="0 0 16 16" class="github-icon" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          <svg version="1.1"
+               width="20"
+               height="20"
+               viewBox="0 0 16 16"
+               class="github-icon"
+               aria-hidden="true">
+            <path fill-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+            </path>
           </svg>
         </a>
       </div>
 
       <div class="app-demo">
-        <img class="gif grow-left" src="https://media.giphy.com/media/3ohjVbrVCU8GC1ZdEQ/giphy.gif" alt="gif of game">
-        <img class="code-snippet grow-left" src="./assets/game-time-code-snippet.png" alt="screen shot of code snippet">
+        <img class="gif grow-left"
+             src="https://media.giphy.com/media/3ohjVbrVCU8GC1ZdEQ/giphy.gif"
+             alt="gif of game">
+        <img class="code-snippet grow-left"
+             src="./assets/game-time-code-snippet.png"
+             alt="screen shot of code snippet">
       </div>
     </section>
   </article>
@@ -276,21 +456,37 @@
     <section class="main-content">
 
       <div class="app-demo">
-        <img class="gif grow-right" src="https://media.giphy.com/media/GDXC4np9Gv7aM/giphy.gif" alt="swapi box demo gif">
-        <img class="code-snippet grow-right" src="./assets/swapi-code-snippet.png" alt="screen shot of code snippet">
+        <img class="gif grow-right"
+             src="https://media.giphy.com/media/GDXC4np9Gv7aM/giphy.gif"
+             alt="swapi box demo gif">
+        <img class="code-snippet grow-right"
+             src="./assets/swapi-code-snippet.png"
+             alt="screen shot of code snippet">
       </div>
 
       <div class="description right-text">
         <p>
-          SWAPI-BOX is a project that utilizes the Star Wars API (SWAPI) for access to as much Star Wars data that anyone could ever
-          want. The data is then rendered through React Components showing information about People, Planets and Vehicles.
-          Any of the individual cards built with this data can be saved so you can keep track of all your favorite things
+          SWAPI-BOX is a project that utilizes the Star Wars API (SWAPI) for access to as much Star Wars data that
+          anyone could ever
+          want. The data is then rendered through React Components showing information about People, Planets and
+          Vehicles.
+          Any of the individual cards built with this data can be saved so you can keep track of all your favorite
+          things
           about Star Wars.
         </p>
-        <a class="nav-link" href="https://github.com/jbexx/swapi-box" target="_blank">
+        <a class="nav-link"
+           href="https://github.com/jbexx/swapi-box"
+           target="_blank">
           <span> View on GitHub </span>
-          <svg version="1.1" width="20" height="20" viewBox="0 0 16 16" class="github-icon" aria-hidden="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          <svg version="1.1"
+               width="20"
+               height="20"
+               viewBox="0 0 16 16"
+               class="github-icon"
+               aria-hidden="true">
+            <path fill-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+            </path>
           </svg>
         </a>
       </div>
@@ -300,12 +496,43 @@
 
   <article id="contact-page">
 
-    <a class="email-link" href="mailto:beckmanjc@gmail.com">
+    <a class="email-link"
+       href="mailto:beckmanjc@gmail.com">
       <p class="email">SEND ME AN EMAIL</p>
     </a>
 
   </article>
-  <script> console.log('HIRE ME!, Or at least interview me.');</script>
+  <script>
+    $(window).scroll(() => {
+      const scrollTopValue = $(window).scrollTop();
+      const menuOffsetValue = $("#floating-menu").offset().top;
+
+      if (scrollTopValue > 150) {
+        $("#scroll-fade").addClass("fade-out");
+        $("#scroll-fade").removeClass("fade-in");
+      } else if (scrollTopValue < 150) {
+        $("#scroll-fade").removeClass("fade-out");
+        $("#scroll-fade").addClass("fade-in")
+      }
+
+      if (scrollTopValue >= menuOffsetValue) {
+        $("#floating-menu").addClass("hide");
+        $("#floating-menu").removeClass("show");
+        $("#sticky-menu").addClass("show");
+        $("#sticky-menu").removeClass("hide");
+      } else {
+        $("#floating-menu").addClass("show");
+        $("#floating-menu").removeClass("hide");
+        $("#sticky-menu").addClass("hide");
+        $("#sticky-menu").removeClass("show");
+      }
+
+
+      // $("#scroll-fade").css("opacity", 1 - $(window).scrollTop() / 200);
+    });
+  </script>
 </body>
 
 </html>
+
+<!-- compass vector credit: <a href="https://www.freepik.com/free-photos-vectors/vintage">Vintage vector created by freepik - www.freepik.com</a> -->
