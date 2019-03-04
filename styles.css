@@ -226,7 +226,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0 60px 0;
+  margin: 10px 0 30px 0;
   width: 75vw;
 }
 
@@ -248,7 +248,6 @@
   display: flex;
   flex: 1;
   justify-content: space-around;
-  margin: 10px;
   width: 90vw;
 }
 
@@ -257,6 +256,9 @@
 .lately {
   flex: 3;
   margin: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .r-inv,
@@ -265,6 +267,24 @@
   color: #3b3b3b;
   font-size: 1.1rem;
   font-weight: 300;
+}
+
+.r-tek-logo,
+.meta-logo,
+.hand-machine-logo {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.r-tek-logo {
+  width: 60px;
+}
+
+.meta-logo {
+  width: 150px;
+}
+
+.hand-machine-logo {
 }
 
 #page-3 {
@@ -337,14 +357,12 @@
   height: 100vh;
 }
 
-.iphone {
-  position: absolute;
+.phone-display {
+  margin-bottom: 120px;
 }
 
-.demo-vid {
-  left: 14px;
-  position: relative;
-  top: 80px;
+.iphone {
+  height: 325px;
 }
 
 .description {
@@ -392,50 +410,6 @@
   fill:#E98074;
 }
 
-.phone-display {
-  margin-bottom: 150px;
-}
-
-/* #page-4,
-#page-5,
-#page-6,
-#page-7,
-#page-8,
-#page-9 {
-  align-items: center;
-  background-color: #eae7dc;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-} */
-
-/* .tokentracker-vid {
-  left: 14px;
-  position: relative;
-  top: 80px;
-} */
-
-/* .heroku-icon {
-  transition: .3s;  
-}
-
-.nav-link:hover > .heroku-icon {
-  fill:#ff23f4;
-}
-
-.gif,
-.code-snippet {
-  margin: 30px;
-  transition: all .3s ease-in-out;
-  width: 400px;
-}
-
-.grow-right:hover {
-  transform: scale(1.3);
-  margin-left: 50px;
-} */
-
 .app-links {
   display: flex;
   flex-wrap: wrap;
@@ -448,10 +422,6 @@
   flex-direction: column;
   justify-content: center;
 }
-
-/* .grow-left:hover {
-  transform: scale(1.3);
-} */
 
 .right-text {
   margin-left: 10%;
