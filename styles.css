@@ -6,15 +6,51 @@
   margin: 0;
 }
 
+#show-anyway {
+  align-items: center;
+  background-color: #90d0d8;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+#show-anyway > p {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #383838;
+
+}
+
+.show-anyway-btn {
+  background-color: #e98074;
+  border: 2px solid #eae7dc;
+  border-radius: 8px;
+  color: #eae7dc;
+  cursor: pointer;
+  font-size: 1.3rem;
+  height: 60px;
+  transition: 300ms;
+  width: 200px;
+}
+
+.show-anyway-btn:focus {
+  outline:0;
+}
+
+.show-anyway-btn:hover {
+  background-color: #90d0d869;
+  border-color: #383838b6;
+  color: #383838b6;
+}
+
 #top {
   background: url('./assets/palms-and-grass.jpg') no-repeat top center fixed;
   background-size: 100vw 100vh;
-  /* align-items: center;
-  display: flex;
-  flex-direction: column; */
   height: 106vh;
   position: relative;
-  /* justify-content: center; */
 }
 
 .top-content {
@@ -139,7 +175,6 @@
 
 #sticky-menu {
   background-color: #c38d9eb4;
-  /* background-color: #919191de; */
   height: 8vh;
   position: sticky;
   top: 0;
@@ -149,12 +184,10 @@
 }
 
 .hide {
-  /* display: none; */
   opacity: 0;
 }
 
 .show {
-  /* display: block; */
   opacity: 1
 }
 
@@ -287,7 +320,7 @@
 .hand-machine-logo {
 }
 
-#page-3 {
+#doc-swap {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -497,6 +530,22 @@
   fill: #383838b6;
 }
 
+@media (max-width: 1150px) {
+  #sticky-menu,
+  #top,
+  #about,
+  #sidewinder,
+  #blacktop,
+  #doc-swap,
+  #contact {
+    display: none;
+  }
+
+  #show-anyway {
+    display: flex;
+  }
+}
+
 /* @media (max-width: 930px) {
   .header-title,
   .career-title {
@@ -528,7 +577,7 @@
     margin-left: 0px;
   }
 
-  #page-3,
+  #doc-swap,
   #page-4 {
     height: 400vh;
   }

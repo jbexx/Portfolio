@@ -31,6 +31,13 @@
 </head>
 
 <body>
+
+  <section id="show-anyway">
+    <p>Sorry! I'm not responsive yet.</p>
+    <button class="show-anyway-btn"
+            type="button">Show Anyway</button>
+  </section>
+
   <section id="sticky-menu"
            class="hide">
     <div>
@@ -227,7 +234,7 @@
 
   </article>
 
-  <article id="page-3">
+  <article id="doc-swap">
 
     <h3 class="project-title">DocSwap</h3>
 
@@ -359,6 +366,21 @@
         $("#sticky-menu").removeClass("show");
       }
     });
+
+    const displayMess = () => {
+      $("#top").css("display", "block")
+      $("#sticky-menu").css("display", "block")
+
+      $("#about").css("display", "flex")
+      $("#sidewinder").css("display", "flex")
+      $("#blacktop").css("display", "flex")
+      $("#doc-swap").css("display", "flex")
+      $("#contact").css("display", "flex")
+
+      $("#show-anyway").css("display", "none");
+    }
+
+    $(".show-anyway-btn").on('click', displayMess);
   </script>
 </body>
 
